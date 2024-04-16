@@ -5,20 +5,56 @@
     <meta name="viewport" content="width=device-width" />
     <title>Prime numbers</title>
     <script src="main.js" defer></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <label for="quota">Number of primes:</label>
-    <input type="text" id="quota" name="quota" value="1000000" />
+    <div id="prime-generators">
+      <div id="prime-generator1">
 
-    <button id="generate">Generate primes</button>
-    <button id="reload">Reload</button>
+        <label for="quota">Number of primes:</label>
+        <input type="text" id="quota" name="quota" value="1000000" />
+    
+        <button id="generate">Generate primes</button>
+        <button id="reload">Reload</button>
+    
+        <textarea id="user-input" rows="5" cols="62">
+          Try typing in here immediately after pressing "Generate primes"
+        </textarea>
+    
+        <div id="output"></div>
+      </div>
 
-    <textarea id="user-input" rows="5" cols="62">
-Try typing in here immediately after pressing "Generate primes"
-    </textarea>
+      <div id="prime-generator2">
+        <label for="quota2">Number of primes:</label>
+        <input type="text" id="quota2" name="quota2" value="1000000" />
+    
+        <button id="generate2">Generate primes</button>
+        <button id="reload2">Reload</button>
+    
+        <textarea id="user-input2" rows="5" cols="62">
+          Try typing in here immediately after pressing "Generate primes"
+        </textarea>
+    
+        <div id="output2"></div>
+      </div>
 
-    <div id="output"></div>
+    </div>
+
+    <div id="lists">
+
+      <ul id="list1">
+        List 1:
+      </ul>
+
+      <ul id="list2">
+        List 2:
+      </ul>
+
+    </div>
+
+    <br>
+
+
   </body>
 </html>

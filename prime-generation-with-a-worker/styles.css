@@ -1,5 +1,19 @@
-textarea {
+  #prime-generators {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  textarea {
     display: block;
     margin: 1rem 0;
   }
-  
+
+  #lists {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul {
+    border-style: solid;
+    border-color: black;
+    padding: 1rem;
+  }
